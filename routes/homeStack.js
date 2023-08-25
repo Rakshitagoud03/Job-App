@@ -23,7 +23,7 @@ const screens={
     }
 
 
-        //default styles for the no of pages in an app
+        //default styles for the no of screens in an app
 const HomeStack=createStackNavigator(screens,{
     defaultNavigationOptions:{     
      headerTintColor:'#0077B5', 

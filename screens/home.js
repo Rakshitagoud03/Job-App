@@ -4,12 +4,12 @@ import Card from '../shared/card';
 import jobData from '../screens/jobs.json';
 
  export default function Home({navigation}){
-    const [reviews,setReviews]=useState(jobData.jobs);
+    const [jobs,setjobs]=useState(jobData.jobs);
  
         return(
             <View>
                 
-                {reviews.map((item)=>(
+                {jobs.map((item)=>(
                      
                         <TouchableOpacity key={item.key} onPress={()=>navigation.navigate('ReviewDetails',item)}>
                             <Card>
